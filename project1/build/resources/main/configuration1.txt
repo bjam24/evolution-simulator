@@ -1,0 +1,17 @@
+"mapWidth": 50
+"mapHeight": 50
+"mapVariant": 1
+"grassStart": 40
+"grassEnergy": 40
+"grassSpawn": 10
+"grassVariant": 0
+"animalStart": 50
+"animalEnergy": 80
+"copulationEnergy": 60
+"createOffspringEnergy": 40
+"minimumOffspringMutation": 0
+"maximumOffspringMutation": 1
+"mutationVariant": 0
+"genomeLength": 8
+"behaviorVariant": 0
+"writeCSV": 1
