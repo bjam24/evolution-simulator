@@ -57,7 +57,7 @@ public class SimulationEngine implements Runnable {
                     }
                 }
                 if(this.loopCounter == 400){
-                    System.out.println("Simulation reached maximum days number: 500");
+                    System.out.println("Simulation reached maximum days number: 400");
                     Thread.currentThread().interrupt();
                 }
             }catch(InterruptedException e){
