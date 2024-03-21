@@ -15,7 +15,7 @@ This applies in particular to: the operation of the map, the operation of plant 
 In the case of a map, the key is how we handle its edges. We will implement the following variants:
 
 **globe** - the left and right edges of the map are looped (if the animal goes beyond the left edge, it will appear on the right - and if it goes beyond the right, then on the left); the upper and lower edges of the map are the poles 
-- you cannot enter them (if the animal tries to go beyond these edges of the map, it remains in the field it was on and its direction changes to the opposite);
+you cannot enter them (if the animal tries to go beyond these edges of the map, it remains in the field it was on and its direction changes to the opposite);
 
 **hell portal** - if the animal goes beyond the edge of the map, it goes to a magical portal; its energy decreases by a certain amount (the same as in the case of the offspring's generation), and then it is teleported to a new,
 random place on the map. When it comes to plant growth, certain fields are strongly preferred, according to the Pareto principle. There is an 80% chance that the new plant will grow in the preferred field and only a 20% chance
