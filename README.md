@@ -61,22 +61,25 @@ The behavioral variants are similarly simple:
 
 - **a bit of madness** - in 80% of cases, after executing a gene, the animal activates the gene immediately following it, but in 20% of cases it jumps to another, random gene.
 
+## FAQ
 
-Features
-Adjusting the speed of the simulation,
-Highlighting animals with dominant genomes,
-Showing dominant genomes list and animals that have such genomes,
-Tracking the specific animal (the number of its direct children and indirect descendants),
-Checking which animals are placed on the selected field,
-Showing simulation preview window,
-Showing statistics chart,
-Saving statistics to a file
-Displaying simulation on two maps at the same time:
-Folding map - a map on which, after crossing the border, the animal will be on the other side of the map,
-Fenced map - a map surrounded by a fence which makes it impossible for animals to be on the other side of the map,
-Magic strategy - a simulation mode in which the number of animals will be doubled after it has dropped to the specific value. The number of such respawns is limited.
-A possibility to adjust many settings before starting the simulation.
-Core technology stack
-Java 16,
-Gradle,
-JavaFX
+- The newly born (or generated) pet is oriented in a random direction. It also has a random gene activated (not necessarily the first one).
+
+- The born child appears in the same field as its parents.
+
+- Not all parameter values must be allowed. It is better to limit the permissible ranges (especially to those that will not immediately cause the application to crash) - and inform the user that his configuration is not correct if he goes beyond them.
+- 
+- We treat energy as an integer. However, we make sure that its only source are plants (after reproduction, the sum of the energy of organisms in a given field should be the same as before reproduction).
+- 
+- If several animals compete for a plant (or for the opportunity to breed) in one field, the conflict is resolved in the following way:
+organisms with the highest energy are given priority,
+
+if this does not make it possible to decide, the oldest organisms have priority,
+
+if this does not make it possible to decide, then the organisms with the largest number of children are given priority,
+
+If this does not allow us to decide, we choose among the tied organisms in any way we like.
+
+- Plants can grow where animals stand. Eating takes place at a specific point in the "circadian cycle". Then the animal no longer disturbs the existence of the plant.
+ 
+- New plants do not appear if there is no longer room for them on the map.
