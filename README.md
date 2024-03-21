@@ -3,8 +3,7 @@
 This project was made for the Object-Oriented Programming course at the AGH UST in 2022/2023. I uploaded it a few days ago because I am considering to create even more advanced version.
 
 ## Description
-This project is the implementation of a simple simulator based on Darwin's Theory. Animals are moving on the map, eating grass, and reproducing. Each move requires some energy, so animals need to eat to survive. 
-Also, breeding consumes part of the parent's energy. An animal dies after having run out of energy.
+This project is the implementation of a simple simulator based on Darwin's Theory. It is based on Multithreading so there is possibility to run many simulations at the same time. Animals are moving on the map, eating grass, and reproducing. Each move requires some energy, so animals need to eat to survive. Also, breeding consumes part of the parent's energy. An animal dies after having run out of energy.
 
 Each animal has its genome. A genome is a combination of genomes inherited from an animal's parents. Genome is built of numbers from 0 to 7. Each number is correlated with the animal's preference to move in a specific direction.
 The more repetition of a digit, the more likely it is for the animal to move in the direction represented by this digit.
