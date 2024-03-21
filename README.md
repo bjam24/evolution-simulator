@@ -68,9 +68,9 @@ The behavioral variants are similarly simple:
 - The born child appears in the same field as its parents.
 
 - Not all parameter values must be allowed. It is better to limit the permissible ranges (especially to those that will not immediately cause the application to crash) - and inform the user that his configuration is not correct if he goes beyond them.
-- 
+
 - We treat energy as an integer. However, we make sure that its only source are plants (after reproduction, the sum of the energy of organisms in a given field should be the same as before reproduction).
-- 
+
 - If several animals compete for a plant (or for the opportunity to breed) in one field, the conflict is resolved in the following way:
 organisms with the highest energy are given priority,
 
