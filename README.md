@@ -8,6 +8,32 @@ This project is the implementation of a simple simulator based on Darwin's Theor
 Each animal has its genome. A genome is a combination of genomes inherited from an animal's parents. Genome is built of numbers from 0 to 7. Each number is correlated with the animal's preference to move in a specific direction.
 The more repetition of a digit, the more likely it is for the animal to move in the direction represented by this digit.
 
+## Simulation
+Each day's simulation consists of the following sequence of steps:
+
+- removing dead animals from the map,
+- the turning and displacement of each animal,
+- consumption of plants on which animals have entered the fields,
+- reproduction of fed animals in the same field,
+- growing new plants on selected map fields.
+
+A given simulation is described by a number of parameters:
+
+- height and width of the map,
+- map variant (explained in the section below),
+- starting number of plants,
+- energy provided by eating one plant,
+- number of plants growing each day,
+- plant growth variant (explained in the section below),
+- starting number of animals,
+- pet starting energy,
+- energy necessary to consider the animal as full (and ready to breed),
+- parents' energy used to create offspring,
+- minimum and maximum number of mutations in descendants (can be equal to 0),
+- mutation variant (explained in the section below),
+- the length of the animals' genome,
+- pet behavior variant (explained in the section below),
+
 ## Variants
 Certain aspects of the simulation are configurable and can significantly change its course. Some are simple numerical parameters (e.g. initial population sizes). Some of them, however, significantly modify its rules. 
 This applies in particular to: the operation of the map, the operation of plant growth, the operation of mutations, and the behavior of animals.
