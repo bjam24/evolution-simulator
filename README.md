@@ -8,6 +8,8 @@ This project is the implementation of a simple simulator based on Darwin's Theor
 Each animal has its genome. A genome is a combination of genomes inherited from an animal's parents. Genome is built of numbers from 0 to 7. Each number is correlated with the animal's preference to move in a specific direction.
 The more repetition of a digit, the more likely it is for the animal to move in the direction represented by this digit.
 
+https://github.com/bjam24/evolution-simulator/assets/61807667/be030a76-85a6-4707-99c4-c8fe03201905
+
 ## Simulation
 Each day's simulation consists of the following sequence of steps:
 
