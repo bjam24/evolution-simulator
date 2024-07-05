@@ -1,6 +1,6 @@
 # Evolution simulator
 
-This project was made for the Object-Oriented Programming course at the AGH UST in 2022/2023. I uploaded it a few days ago because of recruiting process. I am creating more avanced and better version for another course.
+This project was made for the Object-Oriented Programming course at the AGH UST in 2022/2023.
 
 ## Description
 This project is the implementation of a simple simulator based on Darwin's Theory. It is based on Multithreading so there is possibility to run many simulations at the same time. Animals are moving on the map, eating grass, and reproducing. Each move requires some energy, so animals need to eat to survive. Also, breeding consumes part of the parent's energy. An animal dies after having run out of energy.
